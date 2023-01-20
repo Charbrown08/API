@@ -1,0 +1,24 @@
+
+
+
+.alineacion{
+  margin-top: 60px;
+  float:left ;
+  margin-right: 15px;
+  border-radius: 0,8;
+}
+
+input{
+  border-radius: 0;
+  margin: 10px;
+  margin-right: 20px;
+  width: 90%;
+}
+
+button{
+  margin-left: 10px;
+}
+
+label{
+  margin-left: 10px;
+}

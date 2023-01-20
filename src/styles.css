@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&family=Yrsa:ital,wght@1,300&display=swap');
+
+*{
+  font-family: 'Unbounded', cursive;
+  font-family: 'Yrsa', serif;
+  font-size: 20px;
+  font-weight: bold;
+  }

@@ -1,0 +1,45 @@
+<div class="container">
+  <br>
+  <h4>Consulta del tiempo por ciudad</h4>
+  <div class="col-lg-5 alineacion card">
+    <form [formGroup]="formulario" (ngSubmit)="consultar()">
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="exampleInputEmail1"
+        aria-describedby="emailHelp" formControlName="ciudad">
+
+        <p class="text-danger" *ngIf="formulario.get('ciudad')!.invalid && formulario.get('ciudad')!.touched">Campo requiere letras</p>
+
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="form-label">Codigo Ciudad</label>
+        <input type="text" class="form-control" id="exampleInputPassword1"
+        formControlName="codigo">
+        <p class="text-danger" *ngIf="formulario.get('codigo')!.invalid && formulario.get('codigo')!.touched">Campo requiere letras</p>
+
+      </div>
+
+      <button type="submit" class="btn btn-primary">Consultar</button>
+    </form>
+    <p class="text-danger" *ngIf="showErrors">{{MensajeError}}</p>
+  </div>
+
+
+
+  <div class="col-lg-5 alineacion">
+    <div class="card">
+      <div class="card-body">
+        <ul>
+          <li>Descripcion: {{descripcion}}</li>
+          <li>Temperatura: {{temperatura}}</li>
+          <li>Humedad: {{humedad}}</li>
+          <li>Ciudad: {{name}}</li>
+          <li>Latitud:{{latitud}}</li>
+          <li>Longitud:{{longitud}}</li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+</div>
